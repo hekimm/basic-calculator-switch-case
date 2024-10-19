@@ -8,6 +8,16 @@
  *
  * @author hekimcanaktas
  */
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author hekimcanaktas
+ */
 
 import java.util.Scanner;
 public class Main {
@@ -33,14 +43,19 @@ public class Main {
                 break;
                 
             case 2 :
-                System.out.println("Sayıların farkı :  "+ Math.abs(sayi1+ sayi2));
+                System.out.println("Sayıların farkı :  "+ Math.abs(sayi1 -  sayi2));
                 break;
             case 3:
                 System.out.println("Sayıların çarpımı :  " + (sayi1*sayi2));
                 break;
                 
             case 4:
-                System.out.println("Sayilarin bölümü : " + (double)sayi1/sayi2);
+                if(sayi2 ==0){
+                    System.out.println("Bölmede 0 a bölünme tanımsızdır!!");
+                }
+                else{
+                     System.out.println("Sayilarin bölümü : " + (double)sayi1/sayi2);
+                }
                 break;
             default:
                    System.out.println("Geçersiz işlem girdiniz !!");
@@ -52,3 +67,4 @@ public class Main {
     }
     
 }
+
